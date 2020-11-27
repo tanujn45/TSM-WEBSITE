@@ -1,0 +1,89 @@
+.careers-container {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 5% 5% 5% 5%;
+}
+
+.careers-container .careers-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.careers-container .careers-content .careers-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex: 1;
+}
+.careers-container .careers-right {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.careers-container .careers-right video {
+  max-height: 80vh;
+  max-width: 800px;
+}
+
+.careers-content h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 0.1;
+}
+
+.careers-content .careers-left span {
+  font-size: 8rem;
+  font-weight: 800;
+  color: #ffbd59;
+}
+
+.careers-content .careers-left p {
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+.careers-content .careers-left p .email {
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  color: #ffbd59;
+}
+
+@media only screen and (max-width: 900px) {
+  .careers-container {
+    padding: 5% 10% 15% 10%;
+  }
+
+  .careers-container .careers-content {
+    margin-top: 70px;
+  }
+
+  .careers-container .careers-right {
+    display: none;
+    pointer-events: none;
+  }
+
+  .careers-content .careers-left h1 {
+    font-size: 3rem;
+  }
+
+  .careers-content .careers-left span {
+    font-size: 6rem;
+  }
+
+  .careers-content .careers-left p {
+    font-size: 0.8rem;
+    text-align: left;
+    margin-top: 30px;
+  }
+}
