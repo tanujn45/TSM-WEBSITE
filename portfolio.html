@@ -286,6 +286,11 @@
         let btntype = item.dataset.button;
         console.log(btntype);
         item.addEventListener("click", function (e) {
+          //   var elems = document.querySelectorAll(".portfolio-btn");
+          //   [].forEach.call(elems, function (el) {
+          //     el.style.color = "#fff";
+          //   });
+          //   item.style.color = "#ffbd59";
           var elems = document.querySelectorAll(".dynamic-area");
           [].forEach.call(elems, function (el) {
             el.classList.remove("visible");
