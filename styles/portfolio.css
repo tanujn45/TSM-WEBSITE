@@ -1,0 +1,46 @@
+.portfolio-container {
+  background-color: black;
+  padding: 80px 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-container button {
+  background-color: black;
+  border: none;
+  color: #fff;
+  margin: 0px 25px;
+  font-size: 18px;
+  transition: color linear 0.2s;
+  outline: none;
+}
+
+.button-container button:hover {
+  color: #ffbd59;
+  cursor: pointer;
+}
+
+.brand,
+.social,
+.brochure,
+.case,
+.videos {
+  background-color: #000;
+  display: none;
+  color: white;
+}
+
+.brand div img,
+.social div img,
+.brochure div img,
+.case div img,
+.videos div img {
+  width: 90vw;
+}
+
+.visible {
+  display: block;
+}
