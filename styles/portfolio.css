@@ -11,19 +11,29 @@ body {
 
 .portfolio-container {
   background-color: black;
-  padding: 80px 0;
+  padding: 80px 0 30px;
 }
 
 .button-container {
   display: flex;
   justify-content: center;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 666px) {
+  .button-container {
+    display: block;
+  }
 }
 
 .button-container button {
+  display: inline-block;
   background-color: black;
   border: none;
   color: #fff;
-  margin: 0px 25px;
+  /* margin: 0px 25px; */
+  padding: 14px;
   font-size: 18px;
   transition: color linear 0.05s;
   outline: none;
