@@ -346,9 +346,17 @@
 
 .content {
   position: relative;
-  width: 60%;
+  width: 90%;
   margin: 30px auto;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content iframe {
+  width: 100%;
+  height: 80vh;
 }
 
 .content .content-overlay {
@@ -1316,6 +1324,11 @@ button.glide__arrow {
 
   .who-container .who-right img {
     max-width: 250px;
+  }
+
+  .video-section .content iframe {
+    width: 100%;
+    height: 22vh;
   }
 
   .wrap {

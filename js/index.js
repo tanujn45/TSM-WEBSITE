@@ -31,25 +31,25 @@ window.onload = function () {
   }).mount();
 
   //Video Component
-  play_video.addEventListener("click", function (e) {
-    e.preventDefault();
-    video_overlay.classList.add("open");
-  });
+  // play_video.addEventListener("click", function (e) {
+  //   e.preventDefault();
+  //   video_overlay.classList.add("open");
+  // });
 
-  video_close.addEventListener("click", function (e) {
-    e.preventDefault();
-    close_video();
-  });
+  // video_close.addEventListener("click", function (e) {
+  //   e.preventDefault();
+  //   close_video();
+  // });
 
-  document.addEventListener("keyup", function (e) {
-    if (e.code === "Escape") {
-      close_video();
-    }
-  });
+  // document.addEventListener("keyup", function (e) {
+  //   if (e.code === "Escape") {
+  //     close_video();
+  //   }
+  // });
 
-  function close_video() {
-    video_overlay.classList.remove("open");
-  }
+  // function close_video() {
+  //   video_overlay.classList.remove("open");
+  // }
 
   //Animations
   gsap.to(".first", {
