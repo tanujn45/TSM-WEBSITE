@@ -307,6 +307,7 @@
   align-items: center;
   width: auto;
   opacity: 0;
+  background-color: white;
 }
 
 .menu .nav .right svg {
