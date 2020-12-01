@@ -44,12 +44,12 @@ body {
   color: white;
 }
 
-.videos {
+/* .videos {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-}
+} */
 
 .brand div img,
 .social div img,
