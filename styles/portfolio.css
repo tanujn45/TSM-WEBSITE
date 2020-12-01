@@ -54,12 +54,12 @@ body {
   color: white;
 }
 
-.videos {
+/* .videos {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-}
+} */
 
 .brand div img,
 .social div img,
@@ -88,24 +88,14 @@ body {
   text-align: center;
 }
 
-.content {
-  position: relative;
-  width: 90%;
-  margin: 30px auto;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.content iframe {
+.video-portfolio iframe {
   width: 100%;
   height: 80vh;
 }
 
 @media only screen and (max-width: 450px) {
-  .content iframe {
+  .video-portfolio iframe {
     width: 100%;
-    height: 22vh;
+    height: 27vh;
   }
 }
