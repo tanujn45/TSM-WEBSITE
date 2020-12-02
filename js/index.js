@@ -116,7 +116,7 @@ window.onload = function () {
 
   close.addEventListener("click", () => {
     lightbox.style.opacity = 0;
-    lightbox.style.pointerEvents = "none";
+    lightbox.style.pointerEvents = "all";
   });
   let count = 0;
   document.addEventListener("mouseout", (event) => {
