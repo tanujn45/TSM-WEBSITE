@@ -23,6 +23,34 @@
     />
     <link rel="stylesheet" href="styles/styles.css" />
     <title>The Simple Marketing</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+        <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+      
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
   </head>
 
   <body>
@@ -247,6 +275,7 @@
             ></span
           >
         </div>
+               <a style="color: white;" href="#footer">Get Free Digital Health Check up for your brand</a>
       </div>
       <div class="menu">
         <div class="navBefore"></div>
@@ -392,7 +421,7 @@
               >Our work</a
             >
           </span>
-          <p>Get Free Digital Health Check up for your brand</p>
+          <a style="color: white;" href="#footer">Get Free Digital Health Check up for your brand</a>
         </div>
       </div>
     </section>
@@ -426,7 +455,7 @@
             table for you, we have a team of powerful thinkers who are dedicated
             to transform ideas into messages.
           </p>
-          <span>Our Team</span>
+          <span>OUR TEAM</span>
         </div>
         <div class="who-right">
           <video
@@ -487,7 +516,7 @@
     </section>
 
     <!-- Contact us and form -->
-    <section>
+    <section id="footer">
       <div class="footer-container">
         <div class="footer-left">
           <img src="./assets/logo.png" alt="One Menu" />

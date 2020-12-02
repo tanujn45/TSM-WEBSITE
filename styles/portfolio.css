@@ -12,6 +12,7 @@ body {
 .portfolio-container {
   background-color: black;
   padding: 20px;
+  z-index: 9;
 }
 
 /* .portfolio-container {
