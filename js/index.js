@@ -108,6 +108,24 @@ window.onload = function () {
       });
     }
   });
+
+  //Exit popup
+
+  const lightbox = document.querySelector(".lightbox");
+  const close = document.querySelector(".close");
+
+  close.addEventListener("click", () => {
+    lightbox.style.opacity = 0;
+    lightbox.style.pointerEvents = "none";
+  });
+  let count = 0;
+  document.addEventListener("mouseout", (event) => {
+    if (event.toElement == null && event.relatedTarget == null && count < 1) {
+      lightbox.style.opacity = 1;
+      lightbox.style.pointerEvents = "all";
+      count++;
+    }
+  });
 };
 
 const animationDuration = 3000;

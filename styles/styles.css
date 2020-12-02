@@ -26,6 +26,52 @@
   max-width: 800px;
 }
 
+.lightbox {
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.box {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+h2,
+.box p {
+  margin: 0 20px;
+}
+
+.close {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  margin: -10px 0 0 -10px;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #5c5c5c;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .main {
   position: relative;
   height: 100vh;
@@ -741,14 +787,14 @@ button.glide__arrow {
   margin-right: 50px;
 }
 
-.footer-container .footer-right form {
+form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.footer-container .footer-right .form-container {
+.form-container {
   position: relative;
   background-color: white;
   margin: auto 30px;
@@ -762,41 +808,41 @@ button.glide__arrow {
   color: black;
 }
 
-.footer-container .footer-right h2 {
+h2 {
   font-size: 2rem;
   margin-bottom: 20px;
 }
 
-.footer-container .footer-right h2 span {
+h2 span {
   color: #ffbd59;
   font-size: 2rem;
   margin-bottom: 20px;
 }
 
-.footer-container .footer-right form .form-input-text {
+form .form-input-text {
   display: flex;
   flex-direction: row;
   width: 80%;
 }
 
-.footer-container .footer-right form .form-input-left {
+form .form-input-left {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-.footer-container .footer-right form .form-input-right {
+form .form-input-right {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-.footer-container .footer-right .input-group {
+.input-group {
   position: relative;
   margin: 10px 10px;
 }
 
-.footer-container .footer-right .form-control {
+.form-control {
   position: relative;
   z-index: 1;
   width: 100%;
@@ -808,11 +854,11 @@ button.glide__arrow {
   background-color: transparent;
 }
 
-.footer-container .footer-right .form-control.has-value:not(:focus) + label {
+.form-control.has-value:not(:focus) + label {
   color: lighten(black, 60%);
 }
 
-.footer-container .footer-right .form-control:focus {
+.form-control:focus {
   outline: none;
   border-width: 2px;
   border-color: #ffbd59;
@@ -887,11 +933,11 @@ button.glide__arrow {
   background-color: #ffbd59;
 }
 
-.footer-container .footer-right .query {
+.query {
   width: 100%;
 }
 
-.footer-container .footer-right .submit {
+.submit {
   padding: 5px 20px;
   letter-spacing: 0.1rem;
   font-size: 0.8rem;
@@ -901,7 +947,7 @@ button.glide__arrow {
   transition: all 0.3s ease-in-out;
 }
 
-.footer-container .footer-right .submit:hover {
+.submit:hover {
   background-color: #ffbd59;
   border: solid 2px #ffbd59;
 }
@@ -1192,18 +1238,18 @@ button.glide__arrow {
     margin-left: 40px;
   }
 
-  .footer-container .footer-right .form-container {
+  .form-container {
     background-color: black;
     color: white;
   }
 
-  .footer-container .footer-right h2 {
+  h2 {
     width: 600px;
     text-align: center;
     margin-bottom: 50px;
   }
 
-  .footer-container .footer-right form .form-input-text {
+  form .form-input-text {
     display: flex;
     flex-direction: column;
     width: 600px;
@@ -1236,7 +1282,7 @@ button.glide__arrow {
     padding: 10px 15px;
   }
 
-  .footer-container .footer-right .query {
+  .query {
     width: 100%;
     align-self: flex-start;
   }
@@ -1365,18 +1411,18 @@ button.glide__arrow {
     margin: 50px 0px;
   }
 
-  .footer-container .footer-right .form-container {
+  .form-container {
     background-color: black;
     color: white;
   }
 
-  .footer-container .footer-right h2 {
+  h2 {
     max-width: 300px;
     text-align: center;
     margin-bottom: 50px;
   }
 
-  .footer-container .footer-right form .form-input-text {
+  form .form-input-text {
     display: flex;
     flex-direction: column;
     max-width: 300px;
