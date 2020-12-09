@@ -59,7 +59,8 @@ body {
 .social,
 .brochure,
 .case,
-.videos {
+.videos,
+.websites {
   background-color: #000;
   display: none;
   color: white;
@@ -104,10 +105,19 @@ body {
   height: 80vh;
 }
 
+.website-portfolio iframe {
+  width: 80%;
+  height: 80vh;
+}
+
 @media only screen and (max-width: 450px) {
   .video-portfolio iframe {
     width: 100%;
     height: 27vh;
+  }
+  .website-portfolio iframe {
+    width: 100%;
+    height: 80vh;
   }
 
   .brand div img,

@@ -356,15 +356,30 @@ h2,
   background-color: white;
 }
 
-.menu .nav .right svg {
+.menu .nav .right .facebook,.menu .nav .right .linkedin {
   margin-top: 10px;
   margin-right: 5px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  fill: #666;
 }
 
-.menu .nav .right svg:hover {
+.menu .nav .right .instagram {
+   margin-top: 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+stroke: #666;
+}
+
+.menu .nav .right .facebook:hover, .menu .nav .right .linkedin:hover {
   transform: scale(1.2);
+  fill: #ffbd59;
+}
+
+.menu .nav .right .instagram:hover {
+  transform: scale(1.2);
+  stroke: #ffbd59;
 }
 
 /* VideoSection */
