@@ -13,7 +13,7 @@
   height: 100vh;
   width: 100%;
   overflow: hidden;
-  background-color: #f6f4f6;
+  background-color: #ffbd59;
   z-index: 20;
   display: flex;
   flex-direction: column;
@@ -21,9 +21,8 @@
   align-items: center;
 }
 
-.first video {
-  max-height: 80vh;
-  max-width: 800px;
+.first svg {
+  transform: scale(3);
 }
 
 .lightbox {
@@ -1080,8 +1079,8 @@ form .form-input-right {
 }
 
 @media only screen and (max-width: 900px) {
-  .first video {
-    transform: scale(0.7);
+  .first svg {
+    transform: scale(1.5);
   }
 
   .main .plane {
