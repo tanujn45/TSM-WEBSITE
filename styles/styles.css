@@ -705,13 +705,14 @@ stroke: #666;
   width: 200px;
 }
 
-.glide__slide a {
+.glide__slide p {
   position: absolute;
   color: black;
   bottom: 0;
   font-size: 0.8rem;
   letter-spacing: 0.1rem;
   text-decoration: none;
+  text-align: center !important;
 }
 
 .glide__slides {
