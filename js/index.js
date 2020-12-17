@@ -54,7 +54,7 @@ window.onload = function () {
   //Animations
   gsap.to(".first", {
     duration: 2,
-    delay: 6,
+    delay: 1.5,
     // display: 'none',
     top: "-100vh",
     ease: "expo.out",
@@ -62,7 +62,7 @@ window.onload = function () {
   gsap.to("#main-content", {
     duration: 2,
     opacity: "1",
-    delay: 6,
+    delay: 1.5,
     ease: "power1.inOut",
   });
 
